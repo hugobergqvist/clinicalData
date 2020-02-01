@@ -345,7 +345,7 @@ const FieldValues = () => {
   };
   return (
     <div className="bodyWrapper">
-      <h3>Field Values</h3>
+      <h2>Field Values</h2>
       <p>
         Returns all values found in a single API field for a set of study
         records. Select the field values returned by using the field parameter.

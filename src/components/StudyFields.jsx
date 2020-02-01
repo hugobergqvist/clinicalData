@@ -374,7 +374,7 @@ const StudyFields = () => {
 
   return (
     <div className="bodyWrapper">
-      <h3>Study Fields</h3>
+      <h2>Study Fields</h2>
       <p>
         Returns values from selected API fields for a large set of study
         records. Select the fields returned using the fields parameter.
@@ -429,9 +429,24 @@ const StudyFields = () => {
           addFieldToList();
         }}
       >
-        Add to search
+        Add field
       </button>
-      <div style={{ display: "flex", alignItems: "center", marginTop: "8px" }}>
+      <button
+        style={{ marginLeft: "20px" }}
+        className="fetchBtn"
+        onClick={() => fetchData()}
+      >
+        Fetch
+      </button>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          marginTop: "8px",
+          borderTop: "1px solid grey",
+          borderBottom: "1px solid grey"
+        }}
+      >
         <p style={{ margin: "0px" }}>Fetching fields:</p>
         {selectedFields.map(elem => {
           return (
@@ -456,9 +471,7 @@ const StudyFields = () => {
           );
         })}
       </div>
-      <button className="fetchBtn" onClick={() => fetchData()}>
-        Fetch
-      </button>
+
       {loading && <p>Loading...</p>}
       {result != "none" && (
         <table id="studies">

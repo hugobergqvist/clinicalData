@@ -12,21 +12,21 @@ function App() {
       <Router>
         <div>
           <div id="navBar">
-            <div className="navCell">
-              <Link to="/fullStudies" className="navLink">
-                Full Studies
-              </Link>
-            </div>
-            <div className="navCell">
-              <Link to="/studyFields" className="navLink">
-                Study Fields
-              </Link>
-            </div>
-            <div className="navCell">
-              <Link to="/fieldValues" className="navLink">
-                Field Values
-              </Link>
-            </div>
+            <Link to="/" className="navLink">
+              <div className="navCell">
+                <p style={{ margin: "0px" }}>Full Studies</p>
+              </div>
+            </Link>
+            <Link to="/studyFields" className="navLink">
+              <div className="navCell">
+                <p style={{ margin: "0px" }}>Study Fields</p>
+              </div>
+            </Link>
+            <Link to="/fieldValues" className="navLink">
+              <div className="navCell">
+                <p style={{ margin: "0px" }}>Field Values</p>
+              </div>
+            </Link>
           </div>
 
           {/* A <Switch> looks through its children <Route>s and
@@ -38,7 +38,7 @@ function App() {
             <Route path="/fieldValues">
               <FieldValues />
             </Route>
-            <Route path="/fullStudies">
+            <Route path="/">
               <FullStudy />
             </Route>
           </Switch>

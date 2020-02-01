@@ -25,7 +25,8 @@ const FullStudy = () => {
 
   return (
     <div className="bodyWrapper">
-      <h3>Full studies</h3>
+      <h2>Full studies</h2>
+      <p>Returns all content for a small set of study records.</p>
       <form>
         <label>
           Start at rank
