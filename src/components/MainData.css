@@ -1,0 +1,71 @@
+#studies {
+  margin-top: 30px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#studies td,
+#studies th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#studies tr {
+  cursor: pointer;
+}
+
+#studies tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#studies tr:hover {
+  background-color: #ddd;
+}
+
+#studies thead {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
+
+input {
+  margin: 8px;
+  padding: 8px;
+  font-size: 12pt;
+  border-radius: 4px;
+  border: 1px solid grey;
+}
+
+.inputBtn {
+  padding: 8px;
+  font-size: 11pt;
+  background-color: white;
+  border-radius: 15px;
+  font-weight: 400;
+  box-shadow: 2px 2px 5px 0.4px #888888;
+}
+
+.fetchBtn {
+  padding: 8px;
+  font-size: 11pt;
+  background-color: rgb(99, 165, 105);
+  border-radius: 15px;
+  font-weight: 400;
+  color: white;
+  box-shadow: 2px 2px 5px 0.4px #888888;
+}
+
+select {
+  margin: 8px;
+  padding: 8px;
+  font-size: 12pt;
+  border-radius: 4px;
+  border: 1px solid grey;
+}
+
+.bodyWrapper {
+  margin: 12px;
+}

@@ -1,10 +1,30 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+#navBar {
+  background-color: rgb(63, 63, 225);
+  display: flex;
+}
+
+.navCell {
+  padding: 12px;
+  margin-left: 12px;
+}
+
+.navCell:hover {
+  background-color: rgb(135, 122, 252);
+}
+
+.navLink {
+  color: white;
+  font-size: 14pt;
+  text-decoration: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
