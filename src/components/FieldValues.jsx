@@ -395,7 +395,12 @@ const FieldValues = () => {
             <tbody>
               {result.FieldValues.map(study => {
                 return (
-                  <tr key={study.FieldValue}>
+                  <tr
+                    key={study.FieldValue}
+                    onClick={() => {
+                      console.log(result);
+                    }}
+                  >
                     <td>{study.FieldValue}</td>
                   </tr>
                 );
